@@ -4,6 +4,18 @@ export const site = {
   location: "Lander, Wyoming",
   email: "jake@reworx307.com",
   emailHref: "mailto:jake@reworx307.com",
+  socials: [
+    {
+      label: "LinkedIn",
+      href: "https://www.linkedin.com/in/jakelara",
+      icon: "linkedin",
+    },
+    {
+      label: "X",
+      href: "https://x.com/jakelara",
+      icon: "x",
+    },
+  ],
   intro: [
     "Hey there. I’m Jake. I help towns, agencies, and local businesses replace paper and spreadsheets with systems their teams will actually use.",
     "I’ve spent a decade guiding people through that change. These days I do it at Reworx, from Lander.",
@@ -14,12 +26,6 @@ export const site = {
       note: "Grab a slot on my calendar",
       href: "https://tidycal.com/jakereworx307/meet-with-jake",
       primary: true,
-    },
-    {
-      label: "LinkedIn",
-      note: "Where I show up most days",
-      href: "https://www.linkedin.com/in/jakelara",
-      primary: false,
     },
     {
       label: "What is a digital transformation company?",
