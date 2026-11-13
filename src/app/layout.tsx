@@ -4,7 +4,7 @@ import "@fontsource-variable/source-sans-3/wght.css"
 import "./globals.css"
 
 const description =
-  "Jake Lara, founder of Reworx in Lander, Wyoming. A short intro and the links to book a time, read, or get in touch."
+  "Jake Lara, founder of Reworx in Lander, Wyoming. A short intro, a note on digital transformation, and a link to book a time."
 
 export const metadata: Metadata = {
   title: "Jake Lara",

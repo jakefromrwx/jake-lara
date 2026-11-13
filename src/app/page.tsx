@@ -46,8 +46,7 @@ export default function Home() {
           <li key={link.href}>
             <a
               href={link.href}
-              target="_blank"
-              rel="noreferrer"
+              {...(link.external ? { target: "_blank", rel: "noreferrer" } : {})}
               className={cn(
                 buttonVariants({
                   variant: link.primary ? "default" : "outline",
@@ -70,13 +69,6 @@ export default function Home() {
           </li>
         ))}
       </ul>
-
-      <p className="mt-8 text-center text-sm text-muted-foreground">
-        Or email{" "}
-        <a className="underline underline-offset-4 hover:text-foreground" href={site.emailHref}>
-          {site.email}
-        </a>
-      </p>
     </main>
   )
 }

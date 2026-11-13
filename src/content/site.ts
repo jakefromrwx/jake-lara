@@ -2,8 +2,6 @@ export const site = {
   name: "Jake Lara",
   title: "Founder, digital transformation psychologist",
   location: "Lander, Wyoming",
-  email: "jake@reworx307.com",
-  emailHref: "mailto:jake@reworx307.com",
   socials: [
     {
       label: "LinkedIn",
@@ -26,18 +24,21 @@ export const site = {
       note: "Grab a slot on my calendar",
       href: "https://tidycal.com/jakereworx307/meet-with-jake",
       primary: true,
+      external: true,
     },
     {
       label: "What is a digital transformation company?",
       note: "A short note I wrote",
-      href: "https://jakelara.com/what-is-a-digital-transformation-company/",
+      href: "/what-is-a-digital-transformation-company",
       primary: false,
+      external: false,
     },
     {
       label: "Reworx",
       note: "The company",
       href: "https://rwx307.com",
       primary: false,
+      external: true,
     },
   ],
 } as const
