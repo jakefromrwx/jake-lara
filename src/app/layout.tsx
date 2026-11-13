@@ -2,24 +2,18 @@ import type { Metadata } from "next"
 import "@fontsource-variable/newsreader/wght.css"
 import "@fontsource-variable/source-sans-3/wght.css"
 import "./globals.css"
-import { site } from "@/content/site"
 
 const description =
-  "Jake Lara is the founder of Reworx in Lander, Wyoming. He helps organizations replace paper and scattered tools with systems their teams will actually use."
+  "Jake Lara, founder of Reworx in Lander, Wyoming. A short intro and the links to book a time, read, or get in touch."
 
 export const metadata: Metadata = {
-  title: "Jake Lara | Systems people actually use",
+  title: "Jake Lara",
   description,
   openGraph: {
-    title: "Jake Lara | Systems people actually use",
+    title: "Jake Lara",
     description,
-    type: "website",
+    type: "profile",
     locale: "en_US",
-  },
-  twitter: {
-    card: "summary",
-    title: "Jake Lara | Systems people actually use",
-    description,
   },
 }
 
@@ -28,30 +22,9 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode
 }>) {
-  const person = {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    name: site.name,
-    jobTitle: site.title,
-    email: site.email,
-    url: site.linkedin,
-    homeLocation: site.location,
-    worksFor: {
-      "@type": "Organization",
-      name: "Reworx",
-      url: site.reworx,
-    },
-  }
-
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className="min-h-screen antialiased">
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(person) }}
-        />
-        {children}
-      </body>
+    <html lang="en">
+      <body className="min-h-screen antialiased">{children}</body>
     </html>
   )
 }
