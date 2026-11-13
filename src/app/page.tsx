@@ -39,6 +39,7 @@ export default function Home() {
                   size: "lg",
                 }),
                 "h-auto w-full flex-col gap-0.5 px-4 py-3 whitespace-normal",
+                link.primary ? "hover:bg-primary/90" : "bg-card hover:bg-muted",
               )}
             >
               <span className="text-base">{link.label}</span>
