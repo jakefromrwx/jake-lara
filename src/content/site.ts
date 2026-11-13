@@ -11,7 +11,7 @@ export const site = {
   links: [
     {
       label: "Book a time",
-      note: "Grab a slot on my calendar",
+      note: "45 minutes",
       href: "https://tidycal.com/jakereworx307/meet-with-jake",
       primary: true,
     },
