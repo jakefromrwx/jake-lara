@@ -12,7 +12,7 @@ export const site = {
     },
     {
       label: "X",
-      href: "https://x.com/jakelara",
+      href: "https://x.com/jakefromrwx",
       icon: "x",
     },
   ],
